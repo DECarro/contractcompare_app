@@ -1,0 +1,169 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family:'Ubuntu', sans-serif;
+  line-height: 1.5;
+}
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+h1 { font-family: 'Ubuntu', sans-serif; }
+h2 { font-family: 'Ubuntu', sans-serif; }
+h3 { font-family: 'Ubuntu', sans-serif; }
+h4 { font-family: 'Ubuntu', sans-serif; }
+p { font-family: 'Ubuntu', sans-serif; }
+
+
+
+
+.jumbotron.container {
+		background-color: #708090;
+		padding: 15px;
+		
+
+}
+
+.jumbotron h1{ color: white; 
+				}
+.jumbotron strong { color: white; }
+.jumbotron p { color: white;
+				
+ }
+
+
+.container.about {
+	padding: 10px 100px 10px 50px;
+	/*background-color: #104050;*/
+	margin: 20px;
+	border-radius: 2px;
+	text-align:left;
+	
+}
+.container.about h1, p {
+	color: white;
+	
+}
+
+
+.container.analyze p {
+	color:black;
+}
+
+.list-group{
+	border: none;
+
+}
+
+.list-group-item{
+
+	border:none;
+
+}
+
+
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+    .navbar-fixed-top
+    {
+    position: relative;
+    top: auto;
+    margin-top: -50px;
+    margin-bottom: 0;
+    }
+}
+
+.container.contact address span.glyphicon {
+  color: #104050 ;
+}
+
+.container.contact p {
+	color:black;
+}
+.container.contact p.lead {
+	text-align:center;
+}
+.parallax {
+  background-image: url('/img/numbers.jpg');
+  height: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.parallax h2 {
+  line-height: 50px;
+  color:white;
+}
+.parallax p {
+  line-height: 100px;
+  color:white;
+}
+
+.container.footer p, small{
+	color:black;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.container.why-us {
+background-color:#6C939F;
+height:400px;
+border-radius:10px;
+margin-bottom: 20px;
+}
+
+.container.why-us h3 {
+	text-align:center;
+}
+.container.anchor {
+  padding-top: 40px;
+  margin-top: -40px;
+ 
+}
+.parallax.home {
+  background-image: url('/img/numbers.jpg');
+  height: 200px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+.container-fluid.faq {
+	background-color:#D1E0E5;
+	height:75px;
+	margin-top:-20px;
+	border-bottom:  50px;
+}
+
+.container-fluid.faq h3 {
+	text-align:center;
+	line-height:75px;
+
+}
+.container.faq p {
+	color:black;
+}
+
+.container.small-modal button{
+	background-color:#fd482f;
+	height:100px;
+	width:300px;
+}
+.container.small-modal{
+	text-align:center;
+	
+}

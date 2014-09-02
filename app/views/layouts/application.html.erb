@@ -5,10 +5,22 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<h1><a href="landing_page">Contract Compare</a></h1>
 <%= yield %>
+ <div class="container footer">
+         <footer>
+          <ul class="list-inline">
+            <li><a href="landing_page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <p class="text-right"><small>&copy; Contract Compare 2014</small></p>
+      </footer>
+      </div>
 
 </body>
 </html>
