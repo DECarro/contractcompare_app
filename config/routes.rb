@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/FAQ'
+
   get 'pages/landing_page'
 
   get 'pages/contact'
