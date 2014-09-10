@@ -106,9 +106,7 @@ p { font-family: 'Ubuntu', sans-serif; }
   line-height: 100px;
   color:white;
 }
-.parallax.home {
-  background-image: asset-url('numbers.jpg', image);
-}
+
 
 .container.footer p, small{
 	color:black;
@@ -143,7 +141,7 @@ margin-bottom: 20px;
  
 }
 .parallax.home {
-  background-image: url('numbers.jpg');
+ background-image: asset-url('numbers.jpg', image);
   height: 200px;
   margin-bottom: 100px;
   text-align: center;
