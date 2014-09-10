@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :products
+
   get 'pages/FAQ'
 
   get 'pages/landing_page'

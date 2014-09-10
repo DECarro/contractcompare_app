@@ -91,11 +91,12 @@ p { font-family: 'Ubuntu', sans-serif; }
 	text-align:center;
 }
 .parallax {
-  background-image: url('/img/numbers.jpg');
-  height: 400px;
+  background-image: url('/img/numbers1.jpg');
+  height: 500px;
   margin-bottom: 20px;
   text-align: center;
   color: white;
+  opacity: 0.7;
 }
 .parallax h2 {
   line-height: 50px;
@@ -105,6 +106,8 @@ p { font-family: 'Ubuntu', sans-serif; }
   line-height: 100px;
   color:white;
 }
+
+
 
 .container.footer p, small{
 	color:black;
