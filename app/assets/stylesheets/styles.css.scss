@@ -91,7 +91,7 @@ p { font-family: 'Ubuntu', sans-serif; }
 	text-align:center;
 }
 .parallax {
-  background-image: asset-url('numbers.jpg', image);
+ 
   height: 500px;
   margin-bottom: 20px;
   text-align: center;
@@ -106,8 +106,9 @@ p { font-family: 'Ubuntu', sans-serif; }
   line-height: 100px;
   color:white;
 }
-
-
+.parallax.home {
+  background-image: asset-url('numbers.jpg', image);
+}
 
 .container.footer p, small{
 	color:black;
