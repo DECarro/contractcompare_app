@@ -80,6 +80,10 @@ p { font-family: 'Ubuntu', sans-serif; }
     }
 }
 
+.btn-primary .btn-lg {
+  color: white;
+}
+
 .container.contact address span.glyphicon {
   color: #104050 ;
 }
@@ -91,28 +95,55 @@ p { font-family: 'Ubuntu', sans-serif; }
 	text-align:center;
 }
 .parallax {
- 
-  height: 500px;
   margin-bottom: 20px;
   text-align: center;
   color: white;
-  opacity: 0.7;
+  
 }
 .parallax h2 {
-  line-height: 50px;
+  line-height: 200px;
   color:white;
 }
 .parallax p {
-  line-height: 100px;
+  line-height: 200px;
   color:white;
 }
 
 .parallax.home {
- background-image: asset-url('numbers.jpg', image);
-  height: 400px;
-  margin-bottom: 100px;
+   background-image: asset-url('numbers.jpg', image);
+   height: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: white;
+    opacity: 0.3;
+}
+
+.parallax.about {
+   background-image: asset-url('numbers.jpg', image);
+   height: 800px;
+    margin-bottom: 100px;
+    text-align: center;
+    
+    
+    
+}
+.container.about {
+  color:black;
+  background-color: white;
   text-align: center;
-  color: white;
+   z-index: 10;
+   height: 750px;
+   width: 700px;
+}
+.container.about h2, {
+  color: black;
+  text-align: center;
+
+}
+.container.about h4, {
+  color: #4d4f53;
+  text-align: left;
+
 }
 
 .container.footer p, small{
