@@ -81,6 +81,24 @@
           </p></ol>
           <p><a class="btn btn-primary btn-lg" href="#analyze" role="button" href="#analyze">Analyze now &raquo;</a></p>
         </div>
+        <div class="col-md-6">
+        <table class="table">
+        <thead>
+            <tr>
+              <th> Featured Product </th>
+            </tr>
+         </thead> 
+           <tbody>
+
+             <tr>
+                <td> <%= link_to image_tag(@featured_product.image_url) %> </td>
+              </tr> 
+
+            </tbody>
+          </table>
+       
+        </div>
+       
        </div>
         
     </div><!-- /container -->
@@ -99,7 +117,10 @@
   <div class="row">
     <div class="col-md-4 col-centered">
       <h3>Save Time</h3>
-       <%= image_tag(Product.find(1).image_url) %>
+      <% whyus = Product.find(1) %>
+      <%= link_to image_tag(whyus.image_url), '/pages/landing_page' %>
+
+      
       <p><span class="glyphicon glyphicon-ok"></span> Carles Odd Future salvia, sartorial narwhal roof party YOLO mustache Helvetica PBR art party. Keffiyeh ethical drinking vinegar art party, tote bag butcher leggings. Lomo fixie ethical 3 wolf moon synth, Intelligentsia banh mi </p>
       <p></p>
     </div>
