@@ -93,6 +93,9 @@
              <tr>
                 <td> <%= link_to image_tag(@featured_product.image_url), '/products#show' %> </td>
               </tr> 
+              <tr> 
+                <td> <%= render 'featured_product' %> <td>
+              </tr>
 
             </tbody>
           </table>
