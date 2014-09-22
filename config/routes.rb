@@ -15,7 +15,11 @@ Rails.application.routes.draw do
 
   get 'form_output', to: 'form_example#form_output'
 
- 
+  get 'form_contact_input', to: 'form_contact#form_contact_input'
+
+  get 'form_contact_output', to: 'form_contact#form_contact_output'
+
+  get 'blog', to: 'blog#article_index'
 
 
 
