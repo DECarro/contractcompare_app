@@ -12,13 +12,7 @@ Rails.application.routes.draw do
 
   get 'about', to: 'pages#about'
 
-  get 'form_input', to: 'form_example#form_input'
-
-  get 'form_output', to: 'form_example#form_output'
-
-  get '_form_input', to: 'contact#_form_input'
-
-  get '_form_output', to: 'contact#_form_output'
+  post 'contact_input', to: 'pages#contact_input'
 
   get 'blog', to: 'blog#article_index'
 
