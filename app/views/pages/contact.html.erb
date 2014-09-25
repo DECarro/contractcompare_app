@@ -24,43 +24,11 @@
               <a href="mailto:contact@backofficeagent.com">contact@backofficeagent.com</a>
             </p>       
         </address>   
-    
-        <p>Send us a message and we'll respond promptly!</p>
-        <form>  
-          <div class="row">
-           <div class="col-lg-12">
-                <form role="form">
-                  <div class="form-group form-group-sm">
-                    <label for="contactformMessage">Message</label>
-                    <textarea type="textarea" class="form-control input-sm" rows="4" id="econtactformtextArea" placeholder="Enter your message here"></textarea>
-                  </div>
-              </div>
-            </div>
-            <div class="row">
-             <div class="col-lg-6">
-                  <div class="form-group form-group-sm">
-                      <label for="contactformFname">First Name</label>
-                      <input type="text" class="form-control input-sm" id="contactformFname" placeholder="Enter first name"></input>
-                  </div>
-              </div>
-              <div class="col-lg-6">
-                   <div class="form-group form-group-sm">
-                        <label for="contactformLname">Last Name</label>
-                        <input type="text" class="form-control input-sm" id="contactformFname" placeholder="Enter last name"></input>
-                    </div>
-              </div>
-            </div>
-            <div class="row">
-             <div class="col-lg-12">
-                  <div class="form-group form-group-sm">
-                    <label for="contactformEmail1">Email address</label>
-                    <input type="email" class="form-control input-sm" id="econtactformEmail1" placeholder="Enter email"></input>
-                  </div>
-              </div>  
-            </div>
-            <button type="submit" class="btn btn-info">Send Your Message</button>
-        </form>
+      <div class="container">
+        <%= render 'contact/form_input'%>
+      </div>
 
+        
 
     </div><!--end  column 1-->
     <div class="col-md-3">
