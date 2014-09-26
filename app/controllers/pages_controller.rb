@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def contact
+
   end
 
   def about
@@ -13,7 +14,12 @@ class PagesController < ApplicationController
   def faq
   end
 
+  def contact_input
+    body = params['message']
 
+    ActionMailer::Base.mail(:from => 'carro.danielle@gmail.com', :to => 'carro.danielle@gmail.com', :subject => "Contact Message", :body => 'I am the email body.').deliver
+    redirect_to "/"
+  end
 
  
 end
