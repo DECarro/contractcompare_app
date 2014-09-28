@@ -15,10 +15,16 @@ class PagesController < ApplicationController
   end
 
   def contact_input
+    
     body = params['message']
+    email = params['email']
+    first_name = params['fname']
+    last_name = params['lname']
+    ActionMailer::Base::Contactmailer.contactmessage_email(:from => email, :to => 'danielle@backofficeagent.com', :subject => first_name + " has sent you a message", :body => body).deliver
 
-    ActionMailer::Base.mail(:from => 'carro.danielle@gmail.com', :to => 'carro.danielle@gmail.com', :subject => "Contact Message", :body => 'I am the email body.').deliver
-    redirect_to "/"
+    redirect_to "/contact"
+
+
   end
 
  
