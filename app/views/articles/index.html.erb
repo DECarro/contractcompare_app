@@ -1,0 +1,17 @@
+<div class="container article">
+	<h1>this is a List of my articles </h1>
+	
+		<div class="container">
+			<% @articles.each do |article| %>
+		<ul>
+			<li><%= link_to article.title, article %> </li>
+			<%= article.excerpt %>
+		</ul>	
+			<%end%>
+
+	</div>
+	<%= link_to 'Categories', categories_path %> |
+	<%= link_to 'New Article', new_article_path %>
+</div>
+
+	

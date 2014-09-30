@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :products 
   resources :blog
+  resources :articles
+  resources :comments
+  resources :categories
+  resources :users
   
   root 'pages#landing_page'
 
@@ -14,7 +18,7 @@ Rails.application.routes.draw do
 
   post 'contact_input', to: 'pages#contact_input'
 
-  get 'blog', to: 'blog#article_index'
+  get 'articles', to: 'articles#index'
 
 
 

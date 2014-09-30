@@ -1,11 +1,10 @@
 class BlogController < ApplicationController
 
-def index
+def index  
+	@articles = Article.all 
 end
 
-def article
-	
-end
+
 
 
 

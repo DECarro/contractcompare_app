@@ -1,0 +1,14 @@
+<div class="container category">
+	<h1>this is a List of my blog categories </h1>
+	<table class"table">
+
+		<tr>
+			<% @categories.each do |category| %>
+
+			<td> <%= link_to category.title, category %> </td>
+			<%end%>
+		</tr>
+
+	</table>
+
+</div>
