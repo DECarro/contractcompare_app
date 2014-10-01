@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   resources :products 
   resources :blog
-  resources :articles
-  resources :comments
+  resources :articles do
+    resources :comments
+  end 
   resources :categories
   resources :users
   
