@@ -1,0 +1,40 @@
+<div class="container testimonials">
+				<h4> Testimonials</h4>
+					<% @product.testimonials.each do |testimonial| %>
+					<p>
+						<strong>Name:</strong>
+						<%=testimonial.testimonialname %>
+					</p>
+					<p>
+						<stong>Testimonial:</stong>
+						<%= testimonial.content %>
+					</p>
+					<p><%= link_to 'Delete Testimonial', [testimonial.product, testimonial], 
+						method: :delete,
+						data: { confirm: 'Are you sure?' } %> 
+					</p>
+					<%end%>
+			</div>
+
+
+			<div class="container testimonials">
+			<h4> Add a testimonial:</h4>
+				<%= form_for ([@testimonial, @product.testimonials.build]) do |f| %>
+				<p>
+					<%= f.label :testimonialname %><br>
+					<%= f.text_field :testimonialname %>
+				</p>
+				<p>
+					<%= f.label :content %> <br>
+					<%= f.text_area :content %>
+				</p>
+				<p>
+					<%= f.label :email_address %> <br>
+					<%= f.text_field :email_address %>
+				</p>
+				<p>
+					<%= f.submit %>
+				</p>
+				<%end%>
+		</div>
+			

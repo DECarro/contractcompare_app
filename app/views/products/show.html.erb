@@ -25,7 +25,8 @@
 		  <%= image_tag (@product.image_url) %>
 		</p>
 		
-
+		<%= render 'testimonials' %>
+		
 		<%= link_to 'Edit', edit_product_path(@product) %> |
 		<%= link_to 'Back', products_path %>
 		</div>

@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def landing_page
   	@featured_product = Product.find(1)
+    
   	
   end
 
@@ -20,7 +21,7 @@ class PagesController < ApplicationController
     email = params['email']
     first_name = params['fname']
     last_name = params['lname']
-    ActionMailer::Base::Contactmailer.contactmessage_email(:from => email, :to => 'danielle@backofficeagent.com', :subject => first_name + " has sent you a message", :body => body).deliver
+    ContactMailer.contactmessage_email(:from => email, :to => 'danielle@backofficeagent.com', :subject => first_name + " has sent you a message", :body => body).deliver
 
     redirect_to "/contact"
 

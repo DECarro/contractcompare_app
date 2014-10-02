@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :products 
+  resources :products do
+    resources :testimonials
+  end
   resources :blog
   resources :articles do
     resources :comments
@@ -20,6 +22,8 @@ Rails.application.routes.draw do
   post 'contact_input', to: 'pages#contact_input'
 
   get 'articles', to: 'articles#index'
+
+  get 'products', to: 'products#show'
 
 
 
