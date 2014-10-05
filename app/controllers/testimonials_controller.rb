@@ -8,7 +8,7 @@ class TestimonialsController < ApplicationController
 	end
 
 
-	def destory
+	def destroy
 		@product = Product.find(params[:product_id])
 		@testimonial = @product.testimonials.find(params[:id])
 		@testimonial.destroy

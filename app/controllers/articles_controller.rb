@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
         redirect_to @article
         
       else
-      flash[:alert] = @article.errors.full_messages.join(", ")
+     
        render 'new'
       
       end

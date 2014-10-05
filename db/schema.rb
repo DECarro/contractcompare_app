@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141001220443) do
+ActiveRecord::Schema.define(version: 20140930222611) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
@@ -60,17 +60,6 @@ ActiveRecord::Schema.define(version: 20141001220443) do
     t.string   "color"
     t.decimal  "price"
   end
-
-  create_table "testimonials", force: true do |t|
-    t.string   "testimonialname"
-    t.text     "content"
-    t.string   "email_address"
-    t.integer  "product_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "testimonials", ["product_id"], name: "index_testimonials_on_product_id"
 
   create_table "users", force: true do |t|
     t.string   "fname"

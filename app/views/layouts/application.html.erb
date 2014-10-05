@@ -12,7 +12,9 @@
 
 <body data-spy="scroll" data-target=".navbar">
 
-<%= render 'layouts/header' %>
+<%= render 'layouts/header_new' %>
+
+<h2><%= flash[:notice] %></h2>
 
 <%= yield %>
  

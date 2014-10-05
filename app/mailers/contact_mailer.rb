@@ -2,9 +2,10 @@ class ContactMailer < ActionMailer::Base
   default from: "danielle@backofficeagent.com"
 
   def contactmessage_email(x)
-  	@x = x
+  	@body = x[:body]
+  	@subject = x[:subject]
     
-  	mail(:to => 'danielle@backofficeagent.com')
+  	mail(:to => 'danielle@backofficeagent.com', :from => x[:from], :subject => x[:subject])
 
   end
 

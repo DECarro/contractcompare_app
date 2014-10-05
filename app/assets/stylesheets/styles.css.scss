@@ -1,9 +1,10 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
+ 
   padding-bottom: 20px;
   font-family:'Ubuntu', sans-serif;
   line-height: 1.5;
+  padding-left: 30px;
 }
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -19,7 +20,31 @@ h4 { font-family: 'Ubuntu', sans-serif; }
 p { font-family: 'Ubuntu', sans-serif; }
 
 
+.navbar {
+  height: 75px;
+  margin-left: -30px;
+ 
+}
 
+.navbar a {
+  color: white;
+}
+
+.navbar-left  {
+  padding-left: 200px;
+  margin-top: -55px;
+
+}
+
+.navbar-left .list-inline {
+  font-size: 1.5em;
+
+}
+.navbar-left a {
+ color: white;
+
+  
+}
 
 .jumbotron.container {
 		background-color: #708090;
@@ -37,6 +62,17 @@ p { font-family: 'Ubuntu', sans-serif; }
 
 .navbar-brand img {
   width: 100px;
+}
+
+.nav .navbar-nav .navbar-right .sign_in a {
+  color: white;
+  
+}
+
+
+.carousel {
+  margin-top: -20px;
+  margin-left: -30px;
 }
 
 .container.about {

@@ -21,8 +21,8 @@ class PagesController < ApplicationController
     email = params['email']
     first_name = params['fname']
     last_name = params['lname']
-    ContactMailer.contactmessage_email(:from => email, :to => 'danielle@backofficeagent.com', :subject => first_name + " has sent you a message", :body => body).deliver
-
+    ContactMailer.contactmessage_email(:from => email, :subject => first_name + " has sent you a message", :body => body).deliver
+    flash[:notice] = "Email Sent!"
     redirect_to "/contact"
 
 
