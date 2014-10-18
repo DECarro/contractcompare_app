@@ -7,6 +7,8 @@ gem 'thin'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 # Use sqlite3 as the database for Active Record
+gem 'cancancan', '~> 1.9'
+gem 'rails_admin'
 
 group :development do
   gem 'sqlite3'
